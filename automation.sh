@@ -13,7 +13,7 @@ while true; do
     table_content=$(echo "$html_content" | awk '/COURSE CODE/{flag=1; next} /<\/table>/{flag=0} flag')
 
     # Display the hour, timestamp, and the extracted table
-    echo "Hour $hours - $timestamp"
+    echo "Print $printed - $timestamp"
     echo "$table_content"
 
     # Increment the printed counter
